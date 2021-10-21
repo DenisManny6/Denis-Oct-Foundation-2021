@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css-position-property/css/position.css">
+    </head>
+    <body>
+        <div class="static">
+            <h1>static</h1>
+            <b>staticis</b> the default value. An element with the position static; 
+            is not <i>positioned </i>in any special way. A static element is said 
+            to be NOT postioned and an element with its position set to anything else 
+            is said to be positioned static.
+        </div>
+
+        <div class="first-relative">
+            <h1>Relative</h1>
+            Setting the <i>top, bottom, left, and right</i> properties 
+            of a <b>relatively-positioned</b> element will cause it to be 
+            adjusted away from its normal position. Other content will not be 
+            adjusted to fit into any gap left by the element.
+        </div>
+        <div class="second-relative">
+            Setting the <i>top, bottom, left, and right</i> properties 
+            of a <b>relatively-positioned</b> element will cause it to be 
+            adjusted away from its normal position. Other content will 
+            not be adjusted to fit into any gap left by the element.
+        </div>
+
+        <div class="fixed">
+            <h1>Fixed</h1>
+
+
+        </div>
+
+        <div class="third-relative">
+            <h1>Neartest ancestor element to the Absolutely positioned element</h1>
+
+            This element is relatively-positioed. If this element was positioned <i>static</i>; 
+            its absolutely positioned child would escape and would be positioned relative 
+            to the domument body.
+
+            <div class="absolute">
+                absolute behaves like <i>fixed</i> except it's <i>relative</i> 
+                to the nearest <i>positioned</i> ancestor element instead of relative 
+                to the viewport.If an absolutely positioned element has no positioned 
+                element ancestors, then 
+            </div>
+        </div>
+       
+    </body>
+</html>

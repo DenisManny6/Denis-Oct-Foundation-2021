@@ -1,49 +1,59 @@
+/*
+=================
+This is going to be where the css for my Grid stying is
+====================
+*/
+
 *,
 *:before,
 *:after {
     -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-            box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
-.group:before, 
+
+body{
+    color: #273a6e;
+    font: 300 16px/22px "lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.group:before,
 .group:after {
     content: "";
     display: table;
 }
-.group:after{
+
+.group:after {
     clear: both;
 }
-.group{
+
+.group {
     clear: both;
     zoom: 1;
 }
 
-.container,
-.grid{
+.grid,
+.container {
     margin: 0 auto;
-    width: 960px;
-}
-.container{
-    margin: 0 auto;
-    padding-left: 30px;
-    padding-right: 30px;
     width: 960px;
 }
 
 .container {
+    margin: 0 auto;
     padding-left: 30px;
     padding-right: 30px;
+    width: 960px;
 }
 
-.grid, 
-.col-1-3,
-.col-2-3{
+.grid,
+.col-1-2,
+.col-1-3 {
     padding-left: 15px;
     padding-right: 15px;
 }
 
-.col-1-3,
-.col-2-3{
+.col-1-2,
+.col-1-3 {
     display: inline-block;
     vertical-align: top;
 }
@@ -51,30 +61,89 @@
 .col-1-3 {
     width: 33.33%;
 }
-.col-1-2{
+
+.col-1-2 {
     width: 66.66%;
 }
 
-h1, h3, h4, h5, p{
+
+/*=====================
+hero section
+====================*/
+
+.hero {
+    padding: 22px 80px 66px 80px;
+}
+
+.hero h2 {
+    font-size: 36px;
+}
+.hero p{
+    font-size: 24px;
+}
+
+
+/*=====================
+typography
+====================*/
+
+h1,
+h3,
+h4,
+h5,
+p {
     margin-bottom: 22px;
 }
 
-.btn{
-    border-radius: 5px;
+h1, h2, h3, h4 p{
+    color: #6c89db;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 44px;
+}
+h2 {
+    font-size: 24px;
+    line-height: 44px;
+}
+
+h3 {
+    font-size: 21px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    color: #4568c9;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/*===================
+buttons
+=====================*/
+
+.btn {
+    border-radius: 10px;
     display: inline-block;
     margin: 0;
 }
-.btn-alt{
-    border: 1px solid red;
+
+.btn-alt {
+    border: 1px solid #dfe2e5;
     padding: 10px 30px;
 }
 
-.hero{
-    padding: 22px, 80px, 66px, 80px;
-}
 
-.logo{
-    border-top: 4px solid whitesmoke;
+/*===================
+Header
+=====================*/
+
+.logo {
+    border-top: 4px solid #d7dae2;
     float: left;
     margin-top: 4px;
     padding-top: .5em;
@@ -82,16 +151,45 @@ h1, h3, h4, h5, p{
 }
 
 
+/*===================
+footer
+=====================*/
 
-
-
-.pimary-footer{
+.primary-footer {
     padding-bottom: 44px;
     padding-top: 44px;
 }
 
-.primary-footer small{
+.primary-footer small {
     float: left;
     font-weight: 400;
+}
+
+/*===============
+   Main head text
+=================*/
+strong {
+    font-weight: 400;
+}
+
+cite, em {
+    font-style: italic;
+}
+
+a {
+    color: #6c89db;
+}
+.teaser, 
+a:hover,
+h3{
+    color: #a9b2b9;
+}
+.primary-nav{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.tagline {
+    margin: 66px 0 22px 0;
 }
 
