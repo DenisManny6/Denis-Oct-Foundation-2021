@@ -20,6 +20,7 @@ a > img {
     width: 20vw;
     border: solid rgb(128, 46, 46) 5px;
     border-radius: 20px;
+    float: left;
 }
 
 header {
@@ -35,6 +36,7 @@ header {
     height: 25vh;
     box-sizing: border-box;
     border-radius: 10px;
+    float: right;
     
 }
 nav > a {

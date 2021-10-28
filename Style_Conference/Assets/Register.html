@@ -3,34 +3,48 @@
     <head>
         <title>Style conference</title>
         <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../Assets/css/main.css">
     </head>
 
     <body>
-        <header class="container">
+        <header class="primary-header container group">
             <h1>
-                <a href="index.html"><img src="assets/images/logo-1.png" alt="logo"></a>
+                <a href="index.html"><img src="../Assets/images/logo-1.png" alt="logo"></a>
             </h1>
 
-            <h3>August 24 - 26th Omaha, NE</h3>
-            <nav>
-                <a hrefs="index.html">Home</a>
-                <a hrefs="speakers.html">Speakers</a>
-                <a hrefs="schedule">Schedule</a>
-                <a hrefs="Venues.html">Venues</a>
-            </nav>
-        </header>
-        <section>
-            <h2>Dedicated, Driven & Determined to coding the best Websites</h2>
-            <p>
-                Double quotes around attribute values are the most common in HTML, but single quotes can also be used.
-                In some situations, when the attribute value itself contains double quotes, it is necessary to use single quotes:
+            <h3 class="tagline">August 24 - 26th Omaha, NE</h3>
 
-            </p>
+            <nav class="primary-nav nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li><!--
+                    --><li><a href="speakers.html">Speakers</a></li><!--
+                    --><li><a href="schedule.html">Schedule</a></li><!--
+                    --><li><a href="venues.html">Venue</a></li>
+                </ul>
+            </nav>
+
+        </header>
+        <section class="row-alt">
+            <div class="lead container">
+                <h3>Register</h3>
+                <p>
+                    Each year we strive to reach and teach developers nation wide, 
+                    and this year we'd love it for you to join us. 
+                    Conference passes only cost $99, one of the best values you'll find.
+                </p>
             <a hrefs="register.html">Register</a>
+            </div>
+            
         </section>
        
         
-        <footer class="container">
+        <footer class="primary-footer container">
             <a hrefs="index.html">Home</a>
             <a hrefs="Speakers.html">Speakers</a>
             <a hrefs="schedule.html">Schedule</a>
