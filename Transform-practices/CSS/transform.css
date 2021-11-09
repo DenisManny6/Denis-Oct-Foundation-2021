@@ -1,0 +1,39 @@
+.box{
+    border: 3px solid red;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    font-size: 2em;
+    padding: 30px;
+}
+.box1 {
+   float: right;
+   margin-top: 150px;;
+   margin-right: 50px;
+}
+
+.box1:hover{
+    /*transform: scale(1.5);*/
+    transform: translateZ(30px, -100px);
+}
+
+
+.box2{
+    margin-top: 150px;
+    margin-left: 50px;
+    position: relative;
+   /* transform: rotate(.15turn); */
+}
+
+.box2::after {
+    content: 'Box';
+    background: red;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.box2:hover {
+    
+    /*transform: scale(1.5);*/
+}
